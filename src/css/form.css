@@ -1,19 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
 
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    background-image: url('/TechBechSchool/assets/images/Background image big.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 
-/*--------------NAV------*/
+body {
+ 
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-image: url('../../assets/images/Background\ image\ big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+  
 nav {
   
   display: flex;
@@ -139,65 +144,86 @@ nav a {
   }
 
 
-  /*---------------FOOTER-----------*/
-  .pie-de-pagina {
+  /*Footer*/
+
+footer {
         
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    border-top: 2px solid #00CED1;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #00CED1;
+  background:linear-gradient(
+    200deg,
+    rgb(113, 16, 193), 
+    rgb(0, 206, 209), 
+    rgb(135, 60, 196));
+  font-size: 1em;
+  padding: 1em ;
+  border: none;
+  
+}
 
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-left: 1rem;
+  padding-bottom: 1em;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.links a:hover {
+  transform: rotate3d(1, 0, 0, 20deg);
+  
+}
+
+
+.rrss, .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.rrss a , .links a {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-bottom: 1em;
+}
+
+.rrss img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.rrss a:hover {
+  transform: scale(1.5);
+  
+}
+
+.links a:hover {
+  transform: scale(0.9);
+  
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .rrss,
+  .links {
+      flex-direction: column;
+      align-items: center;
   }
-   
-  .redes-sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.redes-sociales a {
-    margin-right: 20px;
-    display: inline-block;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.redes-sociales img {
-    width: 30px;
-}
-
-.texto-enlaces {
-    display: flex;
-    align-items: center;
-}
-
-.texto-enlaces p {
-    margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
-}
-
-.descripcion-imagen {
-    max-width: 100%; /* Ajusta según sea necesario */
-    text-align: center;
-    margin: 10px;
-}
-
-.descripcion-imagen img {
-    width: 100%;
-    height: auto;
-}
-
-.descripcion {
-    display: none;
-}
-
-.redes-sociales a,
-.texto-enlaces {
-  margin: 0;
-}
-
-.texto-enlaces p {
-  margin-left: 10px;
+  .rrss a {
+      margin: 5px 0;
+  }
 }
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */

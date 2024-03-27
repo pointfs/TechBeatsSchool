@@ -1,85 +1,84 @@
 
 <!DOCTYPE html>
 <html lang="es">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='../../TechBechSchool/src/css/stylees.css'>
+  <link rel='stylesheet' href='/src/css/stylees.css'>
+  <link rel="icon" type="image/png" href="/assets/images/TBS.png">
   <title>TeachBeatSchool</title>
   <title>BTM</title>
-  <!-- <title>Formulario de Contacto</title> -->
+  
 </head>
 
 <body>
-  <header class='encabezado'>
+  <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="/TechBechSchool/assets/images/TBS.png" alt="Logo">
+            <img src="/assets/images/TBS.png" alt="Logo">
         </div>
         <section class="navbar_bottom">
-          <button class="bottom"><a href="/TechBechSchool/pages/form.html" target="_blank">Contacto</button></a>
-          <button class="bottom"><a href="/TechBechSchool/pages/piano.html" target="_blank">Instrumentos</button></a>
-          <button class="bottom"><a href="/TechBechSchool/pages/conocenos.html" target="_blank">Sobre Nosotras</button></a>
+          <button class="bottom"><a href="/pages/form.html" target="_blank">Contacto</button></a>
+          <button class="bottom"><a href="/pages/piano.html" target="_blank">Instrumentos</button></a>
+          <button class="bottom"><a href="/pages/conocenos.html" target="_blank">Sobre Nosotras</button></a>
       </section>
     </nav>     
-</header>
+  </header>
 
-  <div class="contenido-principal">
-        <div class="caja-superior">
-        <h1>TeachBeatSchool</h1>
-        <p>
+  <section class="intro-home">
+    <article class="school">
+
+      <h1 class="title-school">TeachBeatSchool</h1>
+        <p class="description-school">
             Donde la tradición se encuentra con la innovación.            
             Creemos en fusionar la riqueza de la música clásica 
             con la innovación del techno. Nuestro enfoque se 
             centra en desarrollar habilidades técnicas sólidas 
             mientras exploramos la libertad creativa que ofrece 
             el mundo electrónico.</p>
+      </article>
 
-            <div class="imagenes-container">
-              <div class="imagen-con-texto">
-                <a href="/TechBechSchool/pages/construccion.html">
-                <img src="./assets/images/img-bateria.png" alt="Imagen 1">
-                <p>Aprende Batería</p>
-              </a>
-              </div>
-              <div class="imagen-con-texto">
-                <a href="./pages/construccion.html">
-                <img src="./assets/images/img-guitarra.png" alt="Imagen 2">
-                <p>Aprende Guitarra</p>
-              </a>
-              </div>
-              <div class="imagen-con-texto">
-                <img src="./assets/images/img-mesa.png" alt="Imagen 3">
-                <a href="./pages/construccion.html">
-                <p>Conviértete en Dj</p>
-                </a>
-              </div>
-              <div class="imagen-con-texto">
-                <a href="./pages/piano.html">
-                  <img src="./assets/images/img-piano.png" alt="piano">
-                  <p>Aprende Piano</p>
-                </a>
-              </div>
-            </div>
-          </div>
-  </div>
-  <!-- El resto de tu contenido va aquí -->
-  <footer class="pie-de-pagina">
-    <div class="texto-enlaces">
-      <p><a href="/TechBechSchool/assets/PDF/pdf/Cookies y tecnología similar.pdf">Cookies</a></p>
-      <p><a href="/TechBechSchool/assets/PDF/pdf/Aviso Legal y Condiciones de Uso de modelosycontratos.pdf">Términos</a></p>
-      <p><a href="/TechBechSchool/assets/PDF/pdf/Declaración de privacidad de GoTech.pdf">Declaración Privacidad</a></p>
-    </div>
-    <div class="redes-sociales">
-      <a href="https://www.facebook.com/?locale=es_ES"><img src="/TechBechSchool/assets/images/logoFacebook.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/"><img src="/TechBechSchool/assets/images/logoInstagram.png" alt="Instagram"></a>
-      <a href="https://es.linkedin.com/"><img src="/TechBechSchool/assets/images/logoLinkedIn.png" alt="LinkedIn"></a>
-    </div>
-  </footer>
+    <article class="instruments-school">
 
-  <script src="/TechBechSchool/src/js/index.js"></script> 
+      <div class="imagen-con-texto">
+        <a href="/pages/construccion.html"><img src="/assets/images/img-bateria.png" alt="Imagen Batería">Aprende Batería</a>
+      </div>
+
+      <div class="imagen-con-texto">
+        <a href="/pages/construccion.html"><img src="/assets/images/img-guitarra.png" alt="Imagen Guitarra">Aprende Guitarra</a>
+      </div>
+
+      <div class="imagen-con-texto">
+        <img src="/assets/images/img-mesa.png" alt="Imagen DJ"><a href="/pages/construccion.html">Conviértete en Dj</a>
+      </div>
+
+      <div class="imagen-con-texto">
+        <a href="/pages/piano.html"><img src="/assets/images/img-piano.png" alt="piano">Aprende Piano</a>
+      </div>
+
+    </article>
+  </section>
+     
+
+    <footer>
+
+      <article class="links">
+        <a href="/assets/PDF/pdf/Cookies y tecnología similar.pdf">Cookies</a>
+        <a href="/assets/PDF/pdf/Aviso Legal y Condiciones de Uso de modelosycontratos.pdf">Términos</a>
+        <a href="/assets/PDF/pdf/Declaración de privacidad de GoTech.pdf">Declaración Privacidad</a>
+      </article>
+
+      <article class="rrss">
+        <a href="https://www.facebook.com/?locale=es_ES"><img src="/assets/images/logoFacebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="/assets/images/logoInstagram.png" alt="Instagram"></a>
+        <a href="https://es.linkedin.com/"><img src="/assets/images/logoLinkedIn.png" alt="LinkedIn"></a>
+      </article>
+
+    </footer>
+
+    <script src="/src/js/index.js"></script> 
 
 
-</body>
+  </body>
 </html>
