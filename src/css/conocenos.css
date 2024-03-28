@@ -13,9 +13,6 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
 }
   
@@ -25,86 +22,65 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #00CED1;
-  height:fit-content;
+  height:10vh;
+  margin: 1vh;
 
-}
-
-nav a {
-  text-decoration: none;
 }
   
-.logo {
-  width: 12vw;
-  padding: 1em;
-}
-
-.nav_bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-    
+.logo  {
+  width: 2%;
+  padding: 1%;
+  height: 2%;
 }
   
 .bottom {
-  background:linear-gradient(
-    200deg,
-    rgb(220, 177, 255), 
-    rgb(0, 206, 209), 
-    rgb(220, 177, 255));
+  background-color: black;
   font-size: 1em; 
-  padding: 1em ;
   border: none;
-  border-radius: 1.5em; 
-  cursor:pointer;
-  margin: 0 0.5em; 
+  margin: 0 1vh;
+  height: 2vh;
+  width: auto;
   
 }
-  
-.bottom:hover {
-  background-color: rgb(220, 177, 255);
-  
-}
-  
 
-.bottom:active {
-  transform: scale(0.90);
-
+.bottom a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
 }
   
-    .contenido-principal {
+.bottom a:hover {
   
-      width: 50%; /* Puedes ajustar el ancho según tus necesidades */
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; /* Opcional: centra el contenido dentro de .contenido-principal */
-      position: relative;
-      color: #FFFFFF;
-    }
-    .imagenes-container {
+  color:#00CED1;
+  
+}
+  
+.container-profiles {
+  width: 50%; 
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+.img-container {
       display: flex;
-      justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
-      flex-wrap: nowrap; /* Esto asegura que las cajas no se envuelvan a la siguiente línea */
+      justify-content: space-around;
+      align-items: center;
+     
     }
     
-    .imagen-con-texto {
-      flex: 0 0 auto; /* Evita que las cajas se hagan más pequeñas que su contenido */
-      max-width: 200px; /* Ancho máximo del contenedor */
-      margin: 10px;
-      text-align: center;
-      background-color: rgba(128, 0, 128, 0.2);
-      padding: 20px;
-    }
-    
-    .imagen-con-texto img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-    }
-    
-    .imagen-con-texto p {
-      margin: 0;
-      color: #fff;
-    }
+.profile {
+  flex: 0 0 auto; /* Evita que las cajas se hagan más pequeñas que su contenido */
+  max-width: 200px; /* Ancho máximo del contenedor */    margin: 1em;
+  text-align: center;
+  background-color: rgba(237, 142, 47, 0.717);
+  padding: 2%;
+  border-radius: 10px;
+  
+}
     
 /*Footer*/
 
@@ -114,11 +90,7 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: 2px solid #00CED1;
-  background:linear-gradient(
-    200deg,
-    rgb(113, 16, 193), 
-    rgb(0, 206, 209), 
-    rgb(135, 60, 196));
+  
   font-size: 1em;
   padding: 1em ;
   border: none;
