@@ -18,23 +18,23 @@ const fs = require('fs');
 
 test("header exists", async () => {
     const { JSDOM } = require("jsdom");
-    const html = fs.readFileSync("/TechBechSchool/pages/conocenos.html", 'utf8');  // Ajusta la ruta según sea necesario
+    const html = fs.readFileSync('TechBeatsSchool/pages/conocenos.html', 'utf8');
     const dom = new JSDOM(html);
     const window = dom.window;
     const document = dom.window.document;
 
-    const header = document.querySelector(".encabezado");
+    const header = document.querySelector(".header");
     expect(header).toBeInTheDocument();
 });
 
 test("footer contains social media links", async () => {
     const { JSDOM } = require("jsdom");
-    const html = fs.readFileSync('./conocenos.html', 'utf8');  // Ajusta la ruta según sea necesario
+    const html = fs.readFileSync('TechBeatsSchool/pages/conocenos.html', 'utf8');  
     const dom = new JSDOM(html);
     const window = dom.window;
     const document = dom.window.document;
 
-    const socialMediaLinks = document.querySelector(".redes-sociales");
+    const socialMediaLinks = document.querySelector(".rrss");
     expect(socialMediaLinks).toBeInTheDocument();
 });
 

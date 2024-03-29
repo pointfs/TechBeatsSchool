@@ -9,7 +9,7 @@ let window;
 let document;
 
 test("header exists",async ()=> {
-    dom= await JSDOM.fromFile("./index.html", {
+    dom= await JSDOM.fromFile("TechBeatsSchool/index.html", {
         resources: "usable",
         runScripts: "dangerously"
     });
@@ -17,7 +17,7 @@ test("header exists",async ()=> {
     window= dom.window
     document= dom.window.document
 
-    const header = document.querySelector(".encabezado"); 
+    const header = document.querySelector(".header"); 
     expect(header).toBeInTheDocument(); 
 })
 
@@ -31,7 +31,7 @@ test("navigation button exists", async () => {
     window = dom.window;
     document = dom.window.document;
 
-    const navigationButton = document.querySelector(".navbar_bottom button");
+    const navigationButton = document.querySelector(".navbar_bottom");
     expect(navigationButton).toBeInTheDocument();
 });
 

@@ -6,7 +6,7 @@ let window;
 let document;
 
 test("playSound function is defined", async () => {
-  const html = fs.readFileSync('C:/ruta/completa/al/piano.html', 'utf8');
+  const html = fs.readFileSync('TechBeatsSchool/pages/piano.html', 'utf8');
   dom = new JSDOM(html, {
         resources: "usable",
         runScripts: "dangerously"
