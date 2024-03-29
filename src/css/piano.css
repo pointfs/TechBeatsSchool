@@ -13,7 +13,9 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-
+  display:flex;
+  flex-wrap: wrap;
+  
 }
   
 nav {
@@ -21,6 +23,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100vw ;
   border-bottom: 2px solid #00CED1;
   height:10vh;
   margin: 1vh;
@@ -29,8 +32,15 @@ nav {
   
 .logo  {
   width: 2%;
-  padding: 1%;
   height: 2%;
+  margin-top: -85px;
+ 
+}
+
+.bottom-logo {
+  border:none;
+  background-color: black;
+  
 }
   
 .bottom {
@@ -41,21 +51,21 @@ nav {
   height: 2vh;
   width: auto;
   
+  
 }
 
 .bottom a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #FFFFFf;
   text-align: center;
   justify-content: center;
+  margin-right: 10px;
 }
   
 .bottom a:hover {
-  
   color:#00CED1;
   
 }
-
 /*Piano*/
  
 .piano-container {
@@ -224,16 +234,11 @@ nav {
 /*Footer*/
 
 footer {
-        
+  width:100%;
   text-align: center;
   display: flex;
   justify-content: space-between;
   border-top: 2px solid #00CED1;
-  background:linear-gradient(
-    200deg,
-    rgb(113, 16, 193), 
-    rgb(0, 206, 209), 
-    rgb(135, 60, 196));
   font-size: 1em;
   padding: 1em ;
   border: none;
@@ -241,22 +246,21 @@ footer {
 }
 
 footer a {
+  
   text-decoration: none;
   color: #FFFFFF;
   padding-left: 1rem;
   padding-bottom: 1em;
-}
-
-footer img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.links a:hover {
-  transform: rotate3d(1, 0, 0, 20deg);
   
 }
 
+
+footer img {
+  
+  width: 2rem;
+  height: 2rem;
+
+}
 
 .rrss, .links {
   display: flex;
@@ -267,17 +271,10 @@ footer img {
 
 .rrss a , .links a {
   margin-right: 20px;
-  display: flex;
-  justify-content: space-around;
   color: #FFFFFF;
   text-decoration: none;
   padding-left: 1rem;
   padding-bottom: 1em;
-}
-
-.rrss img {
-  width: 2rem;
-  height: 2rem;
 }
 
 .rrss a:hover {
@@ -290,6 +287,8 @@ footer img {
   
 }
 
+
+
 /* Media query para ajustar el diseño en pantallas más pequeñas */
 @media (max-width: 768px) {
   .rrss,
@@ -301,4 +300,17 @@ footer img {
   .rrss a {
       margin: 5px 0;
   }
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .redes-sociales,
+    .texto-enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociales a {
+        margin: 5px 0;
+    }
 }
