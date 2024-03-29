@@ -12,7 +12,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
 
 }
   
@@ -21,6 +20,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100vw ;
   border-bottom: 2px solid #00CED1;
   height:10vh;
   margin: 1vh;
@@ -29,8 +29,15 @@ nav {
   
 .logo  {
   width: 2%;
-  padding: 1%;
   height: 2%;
+  margin-top: -85px;
+ 
+}
+
+.bottom-logo {
+  border:none;
+  background-color: black;
+  
 }
   
 .bottom {
@@ -41,46 +48,51 @@ nav {
   height: 2vh;
   width: auto;
   
+  
 }
 
 .bottom a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #FFFFFf;
   text-align: center;
   justify-content: center;
+  margin-right: 10px;
 }
   
 .bottom a:hover {
-  
   color:#00CED1;
   
 }
 
+
     /*-------------FORM--------------*/
   .container {
+    padding:10%;
+    margin-right: 2%;
+    margin-left:2%;
     display: flex;
     justify-content: center;
-    color:#fff;
     align-items: center;
-    min-height: 100vh;
-    background: rgba(249, 248, 246, 0.23);
-    margin: 6.5rem 7.5rem 7.5rem;
+    color:#fff;
+    height: 80vh;
+    background: rgba(57, 5, 121, 0.628);
+    border-radius: 20px;
     flex-direction: column;
   }
   .titulo {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
   }
   .container-formulario {
-    width: 80%;
+    width: 30vw;
     border-radius: 10px; 
   }
   form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: 10%;
   }
   
@@ -131,68 +143,59 @@ nav {
 
   /*Footer*/
 
-footer {
-        
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px solid #00CED1;
+  footer {
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #00CED1;
+    font-size: 1em;
+    padding: 1em ;
+    border: none;
+    
+  }
   
-  font-size: 1em;
-  padding: 1em ;
-  border: none;
+  footer a {
+    
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 1rem;
+    padding-bottom: 1em;
+    
+  }
   
-}
-
-footer a {
-  text-decoration: none;
-  color: #FFFFFF;
-  padding-left: 1rem;
-  padding-bottom: 1em;
-}
-
-footer img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.links a:hover {
-  transform: rotate3d(1, 0, 0, 20deg);
   
-}
-
-
-.rrss, .links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  footer img {
+    
+    width: 2rem;
+    height: 2rem;
   
-}
-
-.rrss a , .links a {
-  margin-right: 20px;
-  display: flex;
-  justify-content: space-around;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding-left: 1rem;
-  padding-bottom: 1em;
-}
-
-.rrss img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.rrss a:hover {
-  transform: scale(1.5);
+  }
   
-}
-
-.links a:hover {
-  transform: scale(0.9);
+  .rrss, .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
   
-}
+  .rrss a , .links a {
+    margin-right: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-bottom: 1em;
+  }
+  
+  .rrss a:hover {
+    transform: scale(1.5);
+    
+  }
+  
+  .links a:hover {
+    transform: scale(0.9);
+    
+  }
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */
 @media (max-width: 768px) {
